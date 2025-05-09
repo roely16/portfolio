@@ -53,11 +53,11 @@ const home = {
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
   headline: <>Building bridges between code and innovation</>,
-  // featured: {
-  //   display: false,
-  //   title: <>Recent project: <strong className="ml-4">Once UI</strong></>,
-  //   href: "/work/building-once-ui-a-customizable-design-system",
-  // },
+  featured: {
+    display: false,
+    title: <>Recent project: <strong className="ml-4">Once UI</strong></>,
+    href: "/work/building-once-ui-a-customizable-design-system",
+  },
   subline: (
     <>
       I'm Herson, a software engineer specializing in frontend development, where I create seamless user experiences. By day, I work with technologies like React, Vue, and Laravel; by night, I bring my own tech projects to life.
