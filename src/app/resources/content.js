@@ -1,16 +1,14 @@
-import { Logo } from "@/once-ui/components";
-
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "Herson",
+  lastName: "Chur",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
+  role: "Software Engineer",
   avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  email: "hersonchur.dev@gmail.com",
+  location: "America/Guatemala", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["Spanish", "English"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter = {
@@ -18,8 +16,7 @@ const newsletter = {
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: (
     <>
-      I occasionally write about design, technology, and share thoughts on the intersection of
-      creativity and engineering.
+      I occasionally write about software development, technology trends, and share insights on how coding and innovation come together.
     </>
   ),
 };
@@ -30,12 +27,12 @@ const social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    link: "https://github.com/roely16",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://linkedin.com/in/herson-chur-dev",
   },
   {
     name: "X",
@@ -55,16 +52,15 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
-  featured: {
-    display: true,
-    title: <>Recent project: <strong className="ml-4">Once UI</strong></>,
-    href: "/work/building-once-ui-a-customizable-design-system",
-  },
+  headline: <>Building bridges between code and innovation</>,
+  // featured: {
+  //   display: false,
+  //   title: <>Recent project: <strong className="ml-4">Once UI</strong></>,
+  //   href: "/work/building-once-ui-a-customizable-design-system",
+  // },
   subline: (
     <>
-      I'm Selene, a design engineer at <Logo icon={false} style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}/>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      I'm Herson, a software engineer specializing in frontend development, where I create seamless user experiences. By day, I work with technologies like React, Vue, and Laravel; by night, I bring my own tech projects to life.
     </>
   ),
 };
@@ -90,9 +86,10 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        👋 Hello! I'm Herson Chur, a versatile Software Engineer with solid experience building robust web and mobile applications. I specialize in modern frontend frameworks like React, React Native, and Vue.js, and also have strong backend expertise using PHP and Laravel, complemented by experience with SQL databases and cloud-based architectures using Firebase and AWS.
+        <br />
+        <br />
+        With a background in the banking industry, I value performance, security, and clean code. I enjoy transforming ideas into functional, scalable solutions and working closely with clients to bring their vision to life — from prototype to production.
       </>
     ),
   },
@@ -101,42 +98,45 @@ const about = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "ZIGI",
+        timeframe: "2023 - Present",
+        role: "Senior Frontend Engineer",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Developing and maintaining a React Native-based wallet application, focusing on high-quality, scalable mobile interfaces.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Collaborate with design teams using Figma to translate UI/UX into responsive mobile experiences.
           </>,
+          <>
+            Write and maintain unit tests with Jest, ensuring code reliability and reducing bugs in production.
+          </>,
+          <>
+            Utilize Bitrise for continuous integration and deployment, streamlining delivery workflows.
+          </>,
+          <>
+            Manage tasks and sprints efficiently through Jira, ensuring consistent delivery in an agile environment.
+          </>
         ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
       {
-        company: "Creativ3",
+        company: "Municipality of Guatemala City",
         timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        role: "Senior Full Stack Engineer",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Built and maintained web and mobile apps using Vue, Angular, and React Native for public service platforms.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Developed backend APIs and business logic using PHP and Laravel, integrating MySQL and Oracle databases.
           </>,
+          <>
+            Managed push notifications via Firebase and handled mobile app publishing on Google Play and the App Store.
+          </>,
+          <>
+            Led end-to-end development efforts on multiple digital solutions, ensuring smooth integration between front and back ends across services.
+          </>
         ],
         images: [],
       },
@@ -147,50 +147,42 @@ const about = {
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "Mariano Gálvez University of Guatemala",
+        description: <>Master of Business Administration (MBA)</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Mariano Gálvez University of Guatemala",
+        description: <>B.Sc. in Information Systems and Computer Science</>,
       },
     ],
-  },
+  }, 
   technical: {
     display: true, // set to false to hide this section
     title: "Technical skills",
     skills: [
       {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
+        title: "Design",
+        description: <>Comfortable using Figma as a development tool rather than a design suite — turning UI concepts into working interfaces with speed and precision.</>,
         // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
       {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
+        title: "Frontend",
+        description: <>Experienced in building modern, responsive user interfaces using Vue.js, Angular, React, and React Native — delivering smooth and engaging user experiences across platforms.</>,
         // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
+      },
+      {
+        title: "Backend",
+        description: <>Proficient in creating robust and maintainable backend systems with PHP, Laravel, and Node.js — ensuring secure, scalable, and well-integrated applications.</>,
+        // optional: leave the array empty if you don't want to display images
+        images: [],
+      },
+      {
+        title: "Cloud",
+        description: <>Hands-on experience with Firebase, particularly Firestore, Authentication, and Push Notifications — powering real-time features and user-centric functionality.</>,
+        // optional: leave the array empty if you don't want to display images
+        images: [],
       },
     ],
   },
