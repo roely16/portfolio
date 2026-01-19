@@ -1,5 +1,5 @@
 // IMPORTANT: Replace with your own domain address - it's used for SEO in meta tags and schema
-const baseURL = "https://demo.magic-portfolio.com";
+const baseURL = "https://hersonchur.dev";
 
 const routes = {
   "/": true,
@@ -92,9 +92,9 @@ const effects = {
 };
 
 const display = {
-  location: true,
-  time: true,
-  themeSwitcher: true
+  location: false,
+  time: false,
+  themeSwitcher: false
 };
 
 const mailchimp = {
