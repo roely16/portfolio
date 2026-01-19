@@ -56,6 +56,7 @@ const home = {
   featured: {
     display: false,
     title: <>Recent project: <strong className="ml-4">Buscamot</strong></>,
+    href: "",
   },
   subline: (
     <>
