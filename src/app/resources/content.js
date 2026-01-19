@@ -12,7 +12,7 @@ const person = {
 };
 
 const newsletter = {
-  display: true,
+  display: false,
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: (
     <>
@@ -55,12 +55,11 @@ const home = {
   headline: <>Building bridges between code and innovation</>,
   featured: {
     display: false,
-    title: <>Recent project: <strong className="ml-4">Once UI</strong></>,
-    href: "/work/building-once-ui-a-customizable-design-system",
+    title: <>Recent project: <strong className="ml-4">Buscamot</strong></>,
   },
   subline: (
     <>
-      I'm Herson, a software engineer specializing in frontend development, where I create seamless user experiences. By day, I work with technologies like React, Vue, and Laravel; by night, I bring my own tech projects to life.
+      I'm Herson, a software engineer specialized in mobile development, with a strong focus on React Native. I build high-quality, user-centered mobile applications powered by Firebase, covering everything from authentication and backend logic to real-time data and cloud functions. I have solid experience publishing apps to the App Store and Google Play, including subscription models, in-app purchases, and release management. By day, I work with modern frontend and mobile technologies; by night, I bring my own tech ideas to life.
     </>
   ),
 };
